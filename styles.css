@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Ensure body can scroll vertically */
+    align-items: center; /* Center content horizontally */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.menu-container {
+    max-width: 800px;
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 20px;
+    border: 1px solid #333;
+    background-color: #111;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+}
+
+header .logo {
+    max-width: 300px;
+    width: 100%; 
+    height: auto;
+    margin: 20px 0; 
+    margin-left: 250px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    flex: 0 1 45%;
+    background-color: #222;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #CB423B;
+}
+
+.menu-item p {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .menu-container {
+        width: 90%; /* Adjust width to fit smaller screens */
+        margin: 20px auto; /* Center the menu container */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+    
+    header .logo {
+        max-width: 100%; /* Make the logo responsive */
+        margin: 20px 0; /* Adjust margins for spacing */
+    }
+    
+    .menu-item {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        margin-bottom: 10px; /* Reduce margin bottom */
+    }
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
