@@ -6,19 +6,18 @@ html, body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #000;
     color: #fff;
-    overflow-x: hidden; /* Hide horizontal overflow */
-}
+    overflow-x: hidden;
 
 body {
     display: flex;
-    flex-direction: column; /* Ensure body can scroll vertically */
-    align-items: center; /* Center content horizontally */
-    overflow-y: auto; /* Enable vertical scrolling */
+    flex-direction: column;
+    align-items: center; 
+    overflow-y: auto; 
 }
 
 .menu-container {
     max-width: 800px;
-    width: 90%; /* Adjust width for smaller screens */
+    width: 90%; 
     padding: 20px;
     border: 1px solid #333;
     background-color: #111;
@@ -71,22 +70,22 @@ header .logo {
     margin: 5px 0;
 }
 
-/* Responsive adjustments */
+
 @media screen and (max-width: 768px) {
     .menu-container {
-        width: 90%; /* Adjust width to fit smaller screens */
-        margin: 20px auto; /* Center the menu container */
-        padding: 10px; /* Reduce padding for smaller screens */
+        width: 90%;
+        margin: 20px auto; 
+        padding: 10px; 
     }
     
     header .logo {
-        max-width: 100%; /* Make the logo responsive */
-        margin: 20px 0; /* Adjust margins for spacing */
+        max-width: 100%;
+        margin: 20px 0;
     }
     
     .menu-item {
-        flex: 1 1 100%; /* Full width on smaller screens */
-        margin-bottom: 10px; /* Reduce margin bottom */
+        flex: 1 1 100%;
+        margin-bottom: 10px;
     }
 }
 
